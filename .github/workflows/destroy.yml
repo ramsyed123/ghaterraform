@@ -1,8 +1,6 @@
 name: destroy infra
 on:
-  push:
-    branches:
-          - main
+    workflow_dispatch:
 jobs:
     destroy:
         runs-on: ubuntu-latest
