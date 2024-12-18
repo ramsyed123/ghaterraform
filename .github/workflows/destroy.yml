@@ -21,9 +21,10 @@ jobs:
                 terraform_version: 1.0.0
 
             - name: Make Destroy Script Executable
-              run: chmod +x destroy.sh
               working-directory: ./terraform
+              run: chmod +x destroy.sh
 
             - name: Run Destroy Script
-              run: ./destroy.sh
               working-directory: ./terraform
+              run: ./destroy.sh
+            
