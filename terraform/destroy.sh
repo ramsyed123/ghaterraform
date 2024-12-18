@@ -1,5 +1,5 @@
 # Initialize Terraform
 terraform init
-terraform plan
+terraform plan -destroy -out=tfplan
 # Destroy Terraform-managed infrastructure
-terraform destroy -auto-approve
+terraform apply -auto-approve tfplan
